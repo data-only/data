@@ -16,7 +16,7 @@
 		{	
 			console.log(key);
 			const Tick = seed[key];
-			$.getJSON('https://eodhistoricaldata.com/api/eod/${Tick}.US?from=2021-06-01&to=2021-06-13&period=d&fmt=json&api_token=60c5e03c767e65.40230308')
+			$.getJSON(`https://eodhistoricaldata.com/api/eod/${Tick}.US?from=2021-06-01&to=2021-06-13&period=d&fmt=json&api_token=60c5e03c767e65.40230308`)
 				.then(function (response) {	
 					console.log(response);
 				}
