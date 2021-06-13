@@ -2,7 +2,7 @@
   <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     	<script type="text/javascript">
-	/*
+	
 	const settings = {
 		"async": true,
 		"url": "https://eodhistoricaldata.com/api/eod/MCD.US?from=2021-06-01&to=2021-06-13&period=d&fmt=json&api_token=OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX",
@@ -12,7 +12,7 @@
 	$.ajax(settings).done(function (response) {
 		
 	});
-	*/	
+		
 	
 	$( window ).load(function() {
 		init();
@@ -24,8 +24,8 @@
 	};
 
 	$.when(init()).then(function (data) {
-		jQuery.data( document.body, "json", data );
-		console.log(data);
+		//jQuery.data( document.body, "json", data );
+		//console.log(data);
   		alert( JSON.stringify(data) );
 	});
 		
