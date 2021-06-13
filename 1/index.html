@@ -2,20 +2,10 @@
   <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     	<script type="text/javascript">
-	
-	const settings = {
-		"async": true,
-		"url": "https://eodhistoricaldata.com/api/eod/MCD.US?from=2021-06-01&to=2021-06-13&period=d&fmt=json&api_token=OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX",
-		"method": "GET"
-	};
-
-	$.ajax(settings).done(function (response) {
-		alert( JSON.stringify(response) );
-	});
 		
-	$.getJSON('https://eodhistoricaldata.com/api/eod/MCD.US?from=2021-06-01&to=2021-06-13&period=d&fmt=json&api_token=OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX').done(function (response) {
-		
+	$.getJSON('https://eodhistoricaldata.com/api/eod/MCD.US?from=2021-06-01&to=2021-06-13&period=d&fmt=json&api_token=OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX').done(function (response) {	
 		console.log(response);
+		alert( JSON.stringify(response) );
 	});
 		
 	/*
