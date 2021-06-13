@@ -6,9 +6,10 @@
 	$.getJSON('https://api.npoint.io/76aa1353cbea77defca2').done(function (response) {	
 		alert( JSON.stringify(response) );
 		jQuery.data( document.body, "Ticker", response );
+		loopTickers();
 	});
 		
-	function populateSelect()
+	function loopTickers()
 	{
 		var json = jQuery.data( document.body, "Ticker" );
 		for (const key in json)
