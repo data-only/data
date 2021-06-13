@@ -13,6 +13,10 @@
 		console.log(response);
 	});
 		
+	$.getJSON('https://eodhistoricaldata.com/api/eod/MCD.US?from=2021-06-01&to=2021-06-13&period=d&fmt=json&api_token=OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX').done(function (response) {
+		alert( JSON.stringify(response));
+	});
+		
 	/*
 	$( window ).load(function() {
 		init();
