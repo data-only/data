@@ -11,11 +11,12 @@
 		
 	function loopTickers()
 	{
-		var json = jQuery.data( document.body, "Ticker" );
+		var Ticks = jQuery.data( document.body, "Ticker" );
 		for (const key in json)
 		{	
 			console.log(key);
-			$.getJSON('https://eodhistoricaldata.com/api/eod/AAPL.US?from=2021-06-01&to=2021-06-13&period=d&fmt=json&api_token=60c5e03c767e65.40230308')
+			const Tick =  Ticks[key]
+			$.getJSON('https://eodhistoricaldata.com/api/eod/${Tick}.US?from=2021-06-01&to=2021-06-13&period=d&fmt=json&api_token=60c5e03c767e65.40230308')
 				.then(function (response) {	
 					console.log(response);
 				}
