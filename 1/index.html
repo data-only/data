@@ -10,7 +10,7 @@
 	};
 
 	$.ajax(settings).done(function (response) {
-		console.log(response);
+		
 	});
 	*/	
 	
@@ -25,7 +25,8 @@
 
 	$.when(init()).then(function (data) {
 		jQuery.data( document.body, "json", data );
-  		alert( JSON.stringify(Object.keys(data)) );
+		console.log(data);
+  		alert( JSON.stringify(data) );
 	});
 		
 		
