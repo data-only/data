@@ -5,12 +5,9 @@
 	const settings = {
 		"async": true,
 		"crossDomain": true,
-		"url": "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v3/get-historical-data?symbol=AAL&region=US",
+		"url": "https://eodhistoricaldata.com/api/eod/MCD.US?from=2021-06-01&to=2021-06-13&period=d&fmt=json&api_token=OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX",
 		"method": "GET",
-		"headers": {
-			"x-rapidapi-key": "lIQKI1sSEKmshcRf0r2rrCY6iC6Cp1nFVi6jsnXHWqdiK3YkZ7",
-			"x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com"
-		}
+		"headers": {}
 	};
 
 	$.ajax(settings).done(function (response) {
